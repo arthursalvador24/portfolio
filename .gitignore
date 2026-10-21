@@ -1,0 +1,4 @@
+# Unused originals kept locally; the page only uses the .webp screenshots.
+assets/shots/*.jpg
+assets/shots/*.png
+assets/icons/
