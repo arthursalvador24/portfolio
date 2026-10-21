@@ -205,7 +205,7 @@ document.querySelectorAll(".reveal").forEach((el) => (io ? io.observe(el) : el.c
   const links = new Map([...document.querySelectorAll(".nav a")].map((a) => [a.hash, a]));
   // Non-overlapping blocks in page order; the hero clears the highlight.
   const blocks = document.querySelectorAll(".work-title, .step, main > section:not(.reel)");
-  const keyOf = (el) => (el.matches(".hero") ? "" : el.matches(".work-title, .step, #now, .more") ? "#work" : `#${el.id}`);
+  const keyOf = (el) => (el.matches(".hero, #process") ? "" : el.matches(".work-title, .step, .more") ? "#work" : `#${el.id}`);
   const spy = new IntersectionObserver((entries) => {
     for (const e of entries) {
       if (!e.isIntersecting) continue;
