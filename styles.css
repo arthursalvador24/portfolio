@@ -370,8 +370,7 @@ h3 { font-size: 19px; line-height: 1.3; letter-spacing: -0.01em; font-weight: 60
 
 /* ---------- More I've built ---------- */
 .more { padding-block: 104px; border-top: 1px solid var(--line); }
-.more-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 48px 40px; }
-.more-head { grid-row: span 2; }
+.more-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 48px 40px; }
 .more-head h2 { margin-bottom: 12px; }
 .more-head p { color: var(--ink-2); font-size: 16px; }
 .more-item { padding-top: 18px; border-top: 1px solid var(--line); }
@@ -379,8 +378,8 @@ h3 { font-size: 19px; line-height: 1.3; letter-spacing: -0.01em; font-weight: 60
 .more-item p { color: var(--ink-2); font-size: 15.5px; }
 .more-item .stack { margin-top: 10px; font-size: 12.5px; }
 @media (max-width: 1000px) {
-  .more-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .more-head { grid-row: auto; grid-column: 1 / -1; }
+  .more-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .more-head { grid-column: 1 / -1; }
 }
 @media (max-width: 600px) { .more-grid { grid-template-columns: 1fr; gap: 28px; } .more { padding-block: 72px; } }
 
